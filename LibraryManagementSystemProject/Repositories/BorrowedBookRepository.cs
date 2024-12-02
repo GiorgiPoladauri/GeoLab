@@ -1,18 +1,27 @@
-﻿using LibraryManagementSystemProject.Models;
+﻿using LibraryManagementSystemProject.IRepositories;
+using LibraryManagementSystemProject.Models;
 using Newtonsoft.Json;
 
 namespace LibraryManagementSystemProject.Repositories
 {
-    public class BorrowedBookRepository
+    public class BorrowedBookRepository : IBorrowedBookRepository
     {
         private string _filePath;
 
         public BorrowedBookRepository(string filePath)
         {
-            _filePath = filePath;
+            string folderPath = Path.Combine(AppDomain.CurrentDomain.BaseDirectory, "DataFiles");
+
+            if (!Directory.Exists(folderPath))
+                Directory.CreateDirectory(folderPath);
+
+            _filePath = Path.Combine(folderPath, "borrowedbooks.json");
+
+            if (!File.Exists(_filePath))
+                File.WriteAllText(_filePath, "[]");
         }
 
-        public List<BorrowedBook> GetAll()
+        public List<BorrowedBook> GetAllBorrowedBooks()
         {
             if (File.Exists(_filePath))
             {
@@ -22,16 +31,16 @@ namespace LibraryManagementSystemProject.Repositories
             return new List<BorrowedBook>();
         }
 
-        public void Add(BorrowedBook borrowedBook)
+        public void BorrowBook(BorrowedBook borrowedBook)
         {
-            var borrowedBooks = GetAll();
+            var borrowedBooks = GetAllBorrowedBooks();
             borrowedBooks.Add(borrowedBook);
             SaveAll(borrowedBooks);
         }
 
-        public void Delete(int borrowedBookId)
+        public void ReturnBook(int borrowedBookId)
         {
-            var borrowedBooks = GetAll();
+            var borrowedBooks = GetAllBorrowedBooks();
             var borrowedBookToDelete = borrowedBooks.FirstOrDefault(u => u.BorrowedBookId == borrowedBookId);
             if (borrowedBookToDelete != null)
             {

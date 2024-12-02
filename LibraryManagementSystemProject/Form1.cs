@@ -7,13 +7,13 @@ namespace LibraryManagementSystemProject
     public partial class Form1 : Form
     {
         private UserService userService;
-        private BorrowService borrowService;
+        private BookService bookService;
 
         public Form1()
         {
             InitializeComponent();
             userService = new UserService();
-            borrowService = new BorrowService();
+            bookService = new BookService();
         }
 
         private void RegisterButton_Click(object sender, EventArgs e)
@@ -38,7 +38,7 @@ namespace LibraryManagementSystemProject
                 return;
             }
 
-            borrowService.BorrowBook(userId, bookId);
+            bookService.BookService(userId, bookId);
         }
 
 
@@ -61,7 +61,7 @@ namespace LibraryManagementSystemProject
             {
                 try
                 {
-                    borrowService.ReturnBook(borrowId);
+                    bookService.ReturnBook(borrowId);
                     MessageBox.Show("Book returned successfully!", "Success", MessageBoxButtons.OK, MessageBoxIcon.Information);
                 }
                 catch (Exception ex)

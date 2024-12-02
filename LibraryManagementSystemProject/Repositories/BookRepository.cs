@@ -1,18 +1,29 @@
-﻿using LibraryManagementSystemProject.Models;
+﻿using System.Collections.Generic;
+using System.IO;
 using Newtonsoft.Json;
+using LibraryManagementSystemProject.Models;
+using LibraryManagementSystemProject.IRepositories;
 
 namespace LibraryManagementSystemProject.Repositories
 {
-    public class BookRepository
+    public class BookRepository : IBookRepository
     {
         private string _filePath;
 
         public BookRepository(string filePath)
         {
-            _filePath = filePath;
+            string folderPath = Path.Combine(AppDomain.CurrentDomain.BaseDirectory, "DataFiles");
+
+            if (!Directory.Exists(folderPath))
+                Directory.CreateDirectory(folderPath);
+
+            _filePath = Path.Combine(folderPath, "books.json");
+
+            if (!File.Exists(_filePath))
+                File.WriteAllText(_filePath, "[]");
         }
 
-        public List<Book> GetAll()
+        public List<Book> GetAllBooks()
         {
             if (File.Exists(_filePath))
             {
@@ -22,14 +33,25 @@ namespace LibraryManagementSystemProject.Repositories
             return new List<Book>();
         }
 
-        public void Add(Book book)
+        public void AddBook(Book book)
         {
-            var books = GetAll();
+            var books = GetAllBooks();
             books.Add(book);
-            SaveAll(books);
+            SaveAllBooks(books);
         }
 
-        public void SaveAll(List<Book> books)
+        public void DeleteBook(int id)
+        {
+            var books = GetAllBooks();
+            var bookToDelete = books.FirstOrDefault(b => b.BookId == id);
+            if (bookToDelete != null)
+            {
+                books.Remove(bookToDelete);
+                SaveAllBooks(books);
+            }
+        }
+
+        private void SaveAllBooks(List<Book> books)
         {
             var json = JsonConvert.SerializeObject(books, Formatting.Indented);
             File.WriteAllText(_filePath, json);

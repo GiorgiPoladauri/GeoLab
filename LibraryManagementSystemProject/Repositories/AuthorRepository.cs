@@ -1,18 +1,27 @@
-﻿using LibraryManagementSystemProject.Models;
+﻿using LibraryManagementSystemProject.IRepositories;
+using LibraryManagementSystemProject.Models;
 using Newtonsoft.Json;
 
 namespace LibraryManagementSystemProject.Repositories
 {
-    public class AuthorRepository
+    public class AuthorRepository : IAuthorRepository
     {
         private string _filePath;
 
         public AuthorRepository(string filePath)
         {
-            _filePath = filePath;
+            string folderPath = Path.Combine(AppDomain.CurrentDomain.BaseDirectory, "DataFiles");
+
+            if (!Directory.Exists(folderPath))
+                Directory.CreateDirectory(folderPath);
+
+            _filePath = Path.Combine(folderPath, "Authors.json");
+
+            if (!File.Exists(_filePath))
+                File.WriteAllText(_filePath, "[]");
         }
 
-        public List<Author> GetAll()
+        public List<Author> GetAllAuthors()
         {
             if (File.Exists(_filePath))
             {
@@ -22,14 +31,21 @@ namespace LibraryManagementSystemProject.Repositories
             return new List<Author>();
         }
 
-        public void Add(Author author)
+        public void AddAuthor(Author author)
         {
-            var authors = GetAll();
+            var authors = GetAllAuthors();
             authors.Add(author);
-            SaveAll(authors);
+            SaveAllAuthor(authors);
         }
 
-        public void SaveAll(List<Author> authors)
+        public void DeleteAuthor(Author author)
+        {
+            var authors = GetAllAuthors();
+            authors.Delete(author);
+            DeleteAuthor(author);
+        }
+
+        public void SaveAllAuthor(List<Author> authors)
         {
             var json = JsonConvert.SerializeObject(authors, Formatting.Indented);
             File.WriteAllText(_filePath, json);

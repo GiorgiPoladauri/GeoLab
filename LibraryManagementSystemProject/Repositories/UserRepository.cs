@@ -1,18 +1,27 @@
-﻿using LibraryManagementSystemProject.Models;
+﻿using LibraryManagementSystemProject.IRepositories;
+using LibraryManagementSystemProject.Models;
 using Newtonsoft.Json;
 
 namespace LibraryManagementSystemProject.Repositories
 {
-    public class UserRepository
+    public class UserRepository : IUserRepository
     {
         private string _filePath;
 
         public UserRepository(string filePath)
         {
-            _filePath = filePath;
+            string folderPath = Path.Combine(AppDomain.CurrentDomain.BaseDirectory, "DataFiles");
+
+            if (!Directory.Exists(folderPath))
+                Directory.CreateDirectory(folderPath);
+
+            _filePath = Path.Combine(folderPath, "users.json");
+
+            if (!File.Exists(_filePath))
+                File.WriteAllText(_filePath, "[]");
         }
 
-        public List<User> GetAll()
+        public List<User> GetAllUsers()
         {
             if (File.Exists(_filePath))
             {
@@ -22,16 +31,16 @@ namespace LibraryManagementSystemProject.Repositories
             return new List<User>();
         }
 
-        public void Add(User user)
+        public void AddUser(User user)
         {
-            var users = GetAll();
+            var users = GetAllUsers();
             users.Add(user);
             SaveAll(users);
         }
 
-        public void Delete(int userId)
+        public void DeleteUser(int userId)
         {
-            var users = GetAll();
+            var users = GetAllUsers();
             var userToDelete = users.FirstOrDefault(u => u.UserId == userId);
             if (userToDelete != null)
             {

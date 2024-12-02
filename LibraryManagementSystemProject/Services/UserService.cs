@@ -15,7 +15,7 @@ namespace LibraryManagementSystemProject.Services
 
         public void RegisterUser(string name, string personalNumber, string email)
         {
-            var users = _userRepository.GetAll();
+            var users = _userRepository.GetAllUsers();
 
             var user = new User
             {
@@ -33,32 +33,30 @@ namespace LibraryManagementSystemProject.Services
 
             if (string.IsNullOrEmpty(email) || !email.Contains('@') || users.Any(u => u.Email == email))
             {
-                MessageBox.Show("Error: Invalid or duplicate email.");
-                return;
+                throw new("Error: Invalid or duplicate email.");
             }
 
             else 
             {
-                _userRepository.Add(user);
-                MessageBox.Show("User has been registered");
+                _userRepository.AddUser(user);
+                throw new("User has been registered");
             }
         }
 
         public void DeleteUser(int userId)
         {
-            var users = _userRepository.GetAll();
+            var users = _userRepository.GetAllUsers();
             var userToDelete = users.FirstOrDefault(u => u.UserId == userId);
 
             if (userToDelete == null)
             {
-                MessageBox.Show("User has not been found.");
-                return;
+                throw new("User has not been found.");
             }
 
             else
             {
-                _userRepository.Delete(userId);
-                MessageBox.Show("User deleted.");
+                _userRepository.DeleteUser(userId);
+                throw new("User deleted.");
             }
         }
     }
