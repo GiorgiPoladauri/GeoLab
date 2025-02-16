@@ -14,9 +14,9 @@
   </ItemGroup>
 
   <ItemGroup>
-    <Folder Include="DataBase\" />
-    <Folder Include="API\" />
-    <Folder Include="Services\Implementation\" />
+    <Folder Include="Data\DataBase\" />
+    <Folder Include="Data\Migrations\" />
+    <Folder Include="Tests\" />
   </ItemGroup>
 
 </Project>

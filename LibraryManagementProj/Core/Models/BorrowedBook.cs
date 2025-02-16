@@ -1,4 +1,4 @@
-﻿namespace LibraryManagementProj.Models
+﻿namespace LibraryManagementProj.Core.Models
 {
     public class BorrowedBook
     {
@@ -8,13 +8,20 @@
         public DateTime BorrowDate { get; set; }
         public DateTime ReturnDate { get; set; }
 
-        public BorrowedBook(int borrowedbookid, int userid, int bookid, DateTime borrowdate, DateTime returndate)
+        public BorrowedBook() { }
+
+        public BorrowedBook(int userid, int bookid, DateTime borrowdate, DateTime returndate)
         {
-            BorrowedBookID = borrowedbookid;
             UserID = userid;
             BookID = bookid;
             BorrowDate = borrowdate;
             ReturnDate = returndate;
         }
+
+        public void ReturnBook(DateTime returndate)
+        {
+            ReturnDate = returndate;
+        }
+
     }
 }

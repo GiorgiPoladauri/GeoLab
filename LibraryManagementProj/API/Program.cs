@@ -1,4 +1,4 @@
-namespace LibraryManagementProj
+namespace LibraryManagementProj.API
 {
     internal static class Program
     {
