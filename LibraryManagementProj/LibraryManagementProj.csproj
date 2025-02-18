@@ -15,7 +15,6 @@
 
   <ItemGroup>
     <Folder Include="API\Controllers\" />
-    <Folder Include="Tests\" />
   </ItemGroup>
 
 </Project>

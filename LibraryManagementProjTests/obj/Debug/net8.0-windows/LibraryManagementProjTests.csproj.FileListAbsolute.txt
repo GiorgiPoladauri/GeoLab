@@ -1,0 +1,8 @@
+C:\Users\Giorg\source\repos\LibraryManagementProj\LibraryManagementProjTests\bin\Debug\net8.0-windows\.msCoverageSourceRootsMapping_LibraryManagementProjTests
+C:\Users\Giorg\source\repos\LibraryManagementProj\LibraryManagementProjTests\bin\Debug\net8.0-windows\CoverletSourceRootsMapping_LibraryManagementProjTests
+C:\Users\Giorg\source\repos\LibraryManagementProj\LibraryManagementProjTests\obj\Debug\net8.0-windows\LibraryManagementProjTests.csproj.AssemblyReference.cache
+C:\Users\Giorg\source\repos\LibraryManagementProj\LibraryManagementProjTests\obj\Debug\net8.0-windows\LibraryManagementProjTests.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Giorg\source\repos\LibraryManagementProj\LibraryManagementProjTests\obj\Debug\net8.0-windows\LibraryManagementProjTests.AssemblyInfoInputs.cache
+C:\Users\Giorg\source\repos\LibraryManagementProj\LibraryManagementProjTests\obj\Debug\net8.0-windows\LibraryManagementProjTests.AssemblyInfo.cs
+C:\Users\Giorg\source\repos\LibraryManagementProj\LibraryManagementProjTests\obj\Debug\net8.0-windows\LibraryManagementProjTests.csproj.CoreCompileInputs.cache
+C:\Users\Giorg\source\repos\LibraryManagementProj\LibraryManagementProjTests\obj\Debug\net8.0-windows\LibraryManagementProjTests.sourcelink.json
