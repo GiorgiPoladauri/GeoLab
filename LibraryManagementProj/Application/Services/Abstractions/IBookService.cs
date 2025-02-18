@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Threading.Tasks;
 
-namespace LibraryManagementProj.Core.Services.Abstractions
+namespace LibraryManagementProj.Application.Services.Abstractions
 {
     public interface IBookService
     {

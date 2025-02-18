@@ -5,7 +5,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace LibraryManagementProj.Data.IRepositories
+namespace LibraryManagementProj.Core.Interfaces.IRepositories
 {
     public interface IBorrowedBookRepository
     {

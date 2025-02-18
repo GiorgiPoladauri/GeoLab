@@ -1,10 +1,10 @@
-﻿using LibraryManagementProj.Core.Services.Abstractions;
-using LibraryManagementProj.Data.IRepositories;
-using LibraryManagementProj.Models;
+﻿using LibraryManagementProj.Core.Models;
 using Microsoft.IdentityModel.Tokens;
 using static System.Windows.Forms.VisualStyles.VisualStyleElement.StartPanel;
+using LibraryManagementProj.Core.Interfaces.IRepositories;
+using LibraryManagementProj.Application.Services.Abstractions;
 
-namespace LibraryManagementProj.Core.Services.Implementation
+namespace LibraryManagementProj.Application.Services.Implementation
 {
     public class UserService : IUserService
     {

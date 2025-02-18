@@ -3,7 +3,7 @@ using System.Threading;
 using System.Threading.Tasks;
 using LibraryManagementProj.Core.Models;
 
-namespace LibraryManagementProj.Data.IRepositories
+namespace LibraryManagementProj.Core.Interfaces.IRepositories
 {
     public interface IBookRepository
     {

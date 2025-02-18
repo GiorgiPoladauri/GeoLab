@@ -1,10 +1,10 @@
 ﻿using System;
 using System.Threading.Tasks;
-using LibraryManagementProj.Core.Services.Abstractions;
-using LibraryManagementProj.Data.IRepositories;
-using LibraryManagementProj.Models;
+using LibraryManagementProj.Core.Models;
+using LibraryManagementProj.Core.Interfaces.IRepositories;
+using LibraryManagementProj.Application.Services.Abstractions;
 
-namespace LibraryManagementProj.Core.Services.Implementation
+namespace LibraryManagementProj.Application.Services.Implementation
 {
     public class BorrowBookService : IBorrowBookService
     {

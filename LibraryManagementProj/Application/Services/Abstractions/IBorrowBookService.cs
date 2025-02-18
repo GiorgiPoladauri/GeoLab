@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace LibraryManagementProj.Core.Services.Abstractions
+namespace LibraryManagementProj.Application.Services.Abstractions
 {
     public interface IBorrowBookService
     {

@@ -62,3 +62,4 @@ C:\Users\Giorg\source\repos\LibraryManagementProj\LibraryManagementProj\obj\Debu
 C:\Users\Giorg\source\repos\LibraryManagementProj\LibraryManagementProj\obj\Debug\net8.0-windows\LibraryManagementProj.Form2.resources
 C:\Users\Giorg\source\repos\LibraryManagementProj\LibraryManagementProj\obj\Debug\net8.0-windows\LibraryManagementProj.Form3.resources
 C:\Users\Giorg\source\repos\LibraryManagementProj\LibraryManagementProj\obj\Debug\net8.0-windows\LibraryManagementProj.Form4.resources
+C:\Users\Giorg\source\repos\LibraryManagementProj\LibraryManagementProj\obj\Debug\net8.0-windows\LibraryManagementProj.sourcelink.json
