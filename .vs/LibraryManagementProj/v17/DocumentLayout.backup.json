@@ -1,88 +1,12 @@
 {
   "Version": 1,
   "WorkspaceRootPath": "C:\\Users\\Giorg\\source\\repos\\LibraryManagementProj\\",
-  "Documents": [
-    {
-      "AbsoluteMoniker": "D:0:0:{6022F46B-778E-4588-8927-4BD79B5C6508}|LibraryManagementProj.API\\LibraryManagementProj.API.csproj|c:\\users\\giorg\\source\\repos\\librarymanagementproj\\librarymanagementproj.api\\librarymanagementproj.api.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
-      "RelativeMoniker": "D:0:0:{6022F46B-778E-4588-8927-4BD79B5C6508}|LibraryManagementProj.API\\LibraryManagementProj.API.csproj|solutionrelative:librarymanagementproj.api\\librarymanagementproj.api.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{2094A55C-EA47-487C-B4C7-5683EE623EE5}|LibraryManagementProjTests\\LibraryManagementProj.Tests.csproj|c:\\users\\giorg\\source\\repos\\librarymanagementproj\\librarymanagementprojtests\\librarymanagementproj.tests.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
-      "RelativeMoniker": "D:0:0:{2094A55C-EA47-487C-B4C7-5683EE623EE5}|LibraryManagementProjTests\\LibraryManagementProj.Tests.csproj|solutionrelative:librarymanagementprojtests\\librarymanagementproj.tests.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{6022F46B-778E-4588-8927-4BD79B5C6508}|LibraryManagementProj.API\\LibraryManagementProj.API.csproj|c:\\users\\giorg\\source\\repos\\librarymanagementproj\\librarymanagementproj.api\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{6022F46B-778E-4588-8927-4BD79B5C6508}|LibraryManagementProj.API\\LibraryManagementProj.API.csproj|solutionrelative:librarymanagementproj.api\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{6022F46B-778E-4588-8927-4BD79B5C6508}|LibraryManagementProj.API\\LibraryManagementProj.API.csproj|c:\\users\\giorg\\source\\repos\\librarymanagementproj\\librarymanagementproj.api\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
-      "RelativeMoniker": "D:0:0:{6022F46B-778E-4588-8927-4BD79B5C6508}|LibraryManagementProj.API\\LibraryManagementProj.API.csproj|solutionrelative:librarymanagementproj.api\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
-    }
-  ],
+  "Documents": [],
   "DocumentGroupContainers": [
     {
       "Orientation": 0,
       "VerticalTabListWidth": 256,
-      "DocumentGroups": [
-        {
-          "DockedWidth": 200,
-          "SelectedChildIndex": 0,
-          "Children": [
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "LibraryManagementProj.API",
-              "DocumentMoniker": "C:\\Users\\Giorg\\source\\repos\\LibraryManagementProj\\LibraryManagementProj.API\\LibraryManagementProj.API.csproj",
-              "RelativeDocumentMoniker": "LibraryManagementProj.API\\LibraryManagementProj.API.csproj",
-              "ToolTip": "C:\\Users\\Giorg\\source\\repos\\LibraryManagementProj\\LibraryManagementProj.API\\LibraryManagementProj.API.csproj",
-              "RelativeToolTip": "LibraryManagementProj.API\\LibraryManagementProj.API.csproj",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
-              "WhenOpened": "2025-02-21T17:48:40.564Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "LibraryManagementProj.Tests",
-              "DocumentMoniker": "C:\\Users\\Giorg\\source\\repos\\LibraryManagementProj\\LibraryManagementProjTests\\LibraryManagementProj.Tests.csproj",
-              "RelativeDocumentMoniker": "LibraryManagementProjTests\\LibraryManagementProj.Tests.csproj",
-              "ToolTip": "C:\\Users\\Giorg\\source\\repos\\LibraryManagementProj\\LibraryManagementProjTests\\LibraryManagementProj.Tests.csproj",
-              "RelativeToolTip": "LibraryManagementProjTests\\LibraryManagementProj.Tests.csproj",
-              "ViewState": "AgIAAAMAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
-              "WhenOpened": "2025-02-21T17:48:16.34Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "Program.cs",
-              "DocumentMoniker": "C:\\Users\\Giorg\\source\\repos\\LibraryManagementProj\\LibraryManagementProj.API\\Program.cs",
-              "RelativeDocumentMoniker": "LibraryManagementProj.API\\Program.cs",
-              "ToolTip": "C:\\Users\\Giorg\\source\\repos\\LibraryManagementProj\\LibraryManagementProj.API\\Program.cs",
-              "RelativeToolTip": "LibraryManagementProj.API\\Program.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAFAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-21T17:45:49.195Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "appsettings.json",
-              "DocumentMoniker": "C:\\Users\\Giorg\\source\\repos\\LibraryManagementProj\\LibraryManagementProj.API\\appsettings.json",
-              "RelativeDocumentMoniker": "LibraryManagementProj.API\\appsettings.json",
-              "ToolTip": "C:\\Users\\Giorg\\source\\repos\\LibraryManagementProj\\LibraryManagementProj.API\\appsettings.json",
-              "RelativeToolTip": "LibraryManagementProj.API\\appsettings.json",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2025-02-21T17:33:23.002Z",
-              "EditorCaption": ""
-            }
-          ]
-        }
-      ]
+      "DocumentGroups": []
     }
   ]
 }

@@ -91,3 +91,9 @@ C:\Users\Giorg\source\repos\LibraryManagementProj\LibraryManagementProj.API\obj\
 C:\Users\Giorg\source\repos\LibraryManagementProj\LibraryManagementProj.API\obj\Debug\net8.0\LibraryManagementProj.API.pdb
 C:\Users\Giorg\source\repos\LibraryManagementProj\LibraryManagementProj.API\obj\Debug\net8.0\LibraryManagementProj.API.genruntimeconfig.cache
 C:\Users\Giorg\source\repos\LibraryManagementProj\LibraryManagementProj.API\obj\Debug\net8.0\ref\LibraryManagementProj.API.dll
+C:\Users\Giorg\source\repos\LibraryManagementProj\LibraryManagementProj.API\bin\Debug\net8.0\Microsoft.Extensions.Configuration.dll
+C:\Users\Giorg\source\repos\LibraryManagementProj\LibraryManagementProj.API\bin\Debug\net8.0\Microsoft.Extensions.Configuration.FileExtensions.dll
+C:\Users\Giorg\source\repos\LibraryManagementProj\LibraryManagementProj.API\bin\Debug\net8.0\Microsoft.Extensions.Configuration.Json.dll
+C:\Users\Giorg\source\repos\LibraryManagementProj\LibraryManagementProj.API\bin\Debug\net8.0\Microsoft.Extensions.FileProviders.Abstractions.dll
+C:\Users\Giorg\source\repos\LibraryManagementProj\LibraryManagementProj.API\bin\Debug\net8.0\Microsoft.Extensions.FileProviders.Physical.dll
+C:\Users\Giorg\source\repos\LibraryManagementProj\LibraryManagementProj.API\bin\Debug\net8.0\Microsoft.Extensions.FileSystemGlobbing.dll
