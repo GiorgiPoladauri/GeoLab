@@ -183,6 +183,24 @@
       "Microsoft.EntityFrameworkCore.Analyzers/9.0.2": {
         "type": "package"
       },
+      "Microsoft.EntityFrameworkCore.InMemory/9.0.2": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.EntityFrameworkCore": "9.0.2",
+          "Microsoft.Extensions.Caching.Memory": "9.0.2",
+          "Microsoft.Extensions.Logging": "9.0.2"
+        },
+        "compile": {
+          "lib/net8.0/Microsoft.EntityFrameworkCore.InMemory.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net8.0/Microsoft.EntityFrameworkCore.InMemory.dll": {
+            "related": ".xml"
+          }
+        }
+      },
       "Microsoft.EntityFrameworkCore.Relational/9.0.1": {
         "type": "package",
         "dependencies": {
@@ -1433,10 +1451,7 @@
         },
         "runtime": {
           "bin/placeholder/LibraryManagementProj.dll": {}
-        },
-        "frameworkReferences": [
-          "Microsoft.WindowsDesktop.App.WindowsForms"
-        ]
+        }
       }
     }
   },
@@ -1828,6 +1843,21 @@
         "docs/PACKAGE.md",
         "microsoft.entityframeworkcore.analyzers.9.0.2.nupkg.sha512",
         "microsoft.entityframeworkcore.analyzers.nuspec"
+      ]
+    },
+    "Microsoft.EntityFrameworkCore.InMemory/9.0.2": {
+      "sha512": "4BmxgSdZSYGlkD9PRuOM1bqZ8LH0tl6nUpPpRqA4UID6A1zRdP2YGcrGzv5kQPgPB7/hWVuDshjfhgKLA50W6Q==",
+      "type": "package",
+      "path": "microsoft.entityframeworkcore.inmemory/9.0.2",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "Icon.png",
+        "PACKAGE.md",
+        "lib/net8.0/Microsoft.EntityFrameworkCore.InMemory.dll",
+        "lib/net8.0/Microsoft.EntityFrameworkCore.InMemory.xml",
+        "microsoft.entityframeworkcore.inmemory.9.0.2.nupkg.sha512",
+        "microsoft.entityframeworkcore.inmemory.nuspec"
       ]
     },
     "Microsoft.EntityFrameworkCore.Relational/9.0.1": {
@@ -3752,6 +3782,7 @@
     "net8.0-windows7.0": [
       "LibraryManagementProj >= 1.0.0",
       "Microsoft.EntityFrameworkCore >= 9.0.2",
+      "Microsoft.EntityFrameworkCore.InMemory >= 9.0.2",
       "Microsoft.NET.Test.Sdk >= 17.13.0",
       "coverlet.collector >= 6.0.4",
       "xunit >= 2.9.3",
@@ -3765,9 +3796,9 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Giorg\\source\\repos\\LibraryManagementProj\\LibraryManagementProjTests\\LibraryManagementProjTests.csproj",
-      "projectName": "LibraryManagementProjTests",
-      "projectPath": "C:\\Users\\Giorg\\source\\repos\\LibraryManagementProj\\LibraryManagementProjTests\\LibraryManagementProjTests.csproj",
+      "projectUniqueName": "C:\\Users\\Giorg\\source\\repos\\LibraryManagementProj\\LibraryManagementProjTests\\LibraryManagementProj.Tests.csproj",
+      "projectName": "LibraryManagementProj.Tests",
+      "projectPath": "C:\\Users\\Giorg\\source\\repos\\LibraryManagementProj\\LibraryManagementProjTests\\LibraryManagementProj.Tests.csproj",
       "packagesPath": "C:\\Users\\Giorg\\.nuget\\packages\\",
       "outputPath": "C:\\Users\\Giorg\\source\\repos\\LibraryManagementProj\\LibraryManagementProjTests\\obj\\",
       "projectStyle": "PackageReference",
@@ -3813,6 +3844,10 @@
         "targetAlias": "net8.0-windows",
         "dependencies": {
           "Microsoft.EntityFrameworkCore": {
+            "target": "Package",
+            "version": "[9.0.2, )"
+          },
+          "Microsoft.EntityFrameworkCore.InMemory": {
             "target": "Package",
             "version": "[9.0.2, )"
           },

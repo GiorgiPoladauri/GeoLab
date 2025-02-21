@@ -1,0 +1,15 @@
+C:\Users\Giorg\source\repos\LibraryManagementProj\LibraryManagementProj\obj\Debug\net8.0\LibraryManagementProj.csproj.AssemblyReference.cache
+C:\Users\Giorg\source\repos\LibraryManagementProj\LibraryManagementProj\obj\Debug\net8.0\LibraryManagementProj.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Giorg\source\repos\LibraryManagementProj\LibraryManagementProj\obj\Debug\net8.0\LibraryManagementProj.AssemblyInfoInputs.cache
+C:\Users\Giorg\source\repos\LibraryManagementProj\LibraryManagementProj\obj\Debug\net8.0\LibraryManagementProj.AssemblyInfo.cs
+C:\Users\Giorg\source\repos\LibraryManagementProj\LibraryManagementProj\obj\Debug\net8.0\LibraryManagementProj.csproj.CoreCompileInputs.cache
+C:\Users\Giorg\source\repos\LibraryManagementProj\LibraryManagementProj\obj\Debug\net8.0\LibraryManagementProj.sourcelink.json
+C:\Users\Giorg\source\repos\LibraryManagementProj\LibraryManagementProj\bin\Debug\net8.0\LibraryManagementProj.deps.json
+C:\Users\Giorg\source\repos\LibraryManagementProj\LibraryManagementProj\bin\Debug\net8.0\LibraryManagementProj.dll
+C:\Users\Giorg\source\repos\LibraryManagementProj\LibraryManagementProj\bin\Debug\net8.0\LibraryManagementProj.pdb
+C:\Users\Giorg\source\repos\LibraryManagementProj\LibraryManagementProj\obj\Debug\net8.0\LibraryManagementProj.dll
+C:\Users\Giorg\source\repos\LibraryManagementProj\LibraryManagementProj\obj\Debug\net8.0\refint\LibraryManagementProj.dll
+C:\Users\Giorg\source\repos\LibraryManagementProj\LibraryManagementProj\obj\Debug\net8.0\LibraryManagementProj.pdb
+C:\Users\Giorg\source\repos\LibraryManagementProj\LibraryManagementProj\obj\Debug\net8.0\ref\LibraryManagementProj.dll
+C:\Users\Giorg\source\repos\LibraryManagementProj\LibraryManagementProj\bin\Debug\net8.0\LibraryManagementProj.runtimeconfig.json
+C:\Users\Giorg\source\repos\LibraryManagementProj\LibraryManagementProj\obj\Debug\net8.0\LibraryManagementProj.genruntimeconfig.cache
