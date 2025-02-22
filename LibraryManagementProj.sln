@@ -7,7 +7,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LibraryManagementProj", "Li
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LibraryManagementProj.API", "LibraryManagementProj.API\LibraryManagementProj.API.csproj", "{6022F46B-778E-4588-8927-4BD79B5C6508}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LibraryManagementProj.Tests", "LibraryManagementProj.Tests\LibraryManagementProj.Tests.csproj", "{988C42D7-24A2-4481-89FB-F74B4E45BEDE}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LibraryManagementProj.Test", "LibraryManagementProj.Test\LibraryManagementProj.Test.csproj", "{72C36595-7FA5-4C0E-9649-FBBF04D6CB13}"
+	ProjectSection(ProjectDependencies) = postProject
+		{8AF5B714-5949-4FD8-8CD7-4A9A12326833} = {8AF5B714-5949-4FD8-8CD7-4A9A12326833}
+	EndProjectSection
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -23,10 +26,10 @@ Global
 		{6022F46B-778E-4588-8927-4BD79B5C6508}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{6022F46B-778E-4588-8927-4BD79B5C6508}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{6022F46B-778E-4588-8927-4BD79B5C6508}.Release|Any CPU.Build.0 = Release|Any CPU
-		{988C42D7-24A2-4481-89FB-F74B4E45BEDE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{988C42D7-24A2-4481-89FB-F74B4E45BEDE}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{988C42D7-24A2-4481-89FB-F74B4E45BEDE}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{988C42D7-24A2-4481-89FB-F74B4E45BEDE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{72C36595-7FA5-4C0E-9649-FBBF04D6CB13}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{72C36595-7FA5-4C0E-9649-FBBF04D6CB13}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{72C36595-7FA5-4C0E-9649-FBBF04D6CB13}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{72C36595-7FA5-4C0E-9649-FBBF04D6CB13}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

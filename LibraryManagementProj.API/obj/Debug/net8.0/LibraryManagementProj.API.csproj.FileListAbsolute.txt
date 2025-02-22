@@ -97,3 +97,4 @@ C:\Users\Giorg\source\repos\LibraryManagementProj\LibraryManagementProj.API\bin\
 C:\Users\Giorg\source\repos\LibraryManagementProj\LibraryManagementProj.API\bin\Debug\net8.0\Microsoft.Extensions.FileProviders.Abstractions.dll
 C:\Users\Giorg\source\repos\LibraryManagementProj\LibraryManagementProj.API\bin\Debug\net8.0\Microsoft.Extensions.FileProviders.Physical.dll
 C:\Users\Giorg\source\repos\LibraryManagementProj\LibraryManagementProj.API\bin\Debug\net8.0\Microsoft.Extensions.FileSystemGlobbing.dll
+C:\Users\Giorg\source\repos\LibraryManagementProj\LibraryManagementProj.API\bin\Debug\net8.0\Microsoft.EntityFrameworkCore.InMemory.dll

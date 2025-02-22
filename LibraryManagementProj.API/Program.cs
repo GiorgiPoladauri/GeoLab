@@ -1,5 +1,9 @@
 using Microsoft.EntityFrameworkCore;
-using LibraryManagementProj.Infrastructure.Data; // Adjust this to match your actual namespace
+using LibraryManagementProj.Infrastructure.Data;
+using LibraryManagementProj.Core.Interfaces.IRepositories;
+using LibraryManagementProj.Infrastructure.Repositories;
+using LibraryManagementProj.Application.Services.Abstractions;
+using LibraryManagementProj.Application.Services.Implementation;
 
 namespace LibraryManagementProj.API
 {
@@ -15,6 +19,10 @@ namespace LibraryManagementProj.API
             // Register the EF Core DbContext using the connection string from appsettings.json
             builder.Services.AddDbContext<LibraryContext>(options =>
                 options.UseSqlServer(builder.Configuration.GetConnectionString("LibraryManagementDbConnection")));
+
+            // Register your repository and service layers
+            builder.Services.AddScoped<IBookRepository, BookRepository>();
+            builder.Services.AddScoped<IBookService, BookService>();
 
             // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
             builder.Services.AddEndpointsApiExplorer();
