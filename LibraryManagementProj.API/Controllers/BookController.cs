@@ -19,7 +19,7 @@ namespace LibraryManagementProj.API.Controllers
 
         // POST: api/Book
         [HttpPost]
-        public async Task<IActionResult> CreateBook([FromBody] CreateOrUpdateBookDto dto)
+        public async Task<IActionResult> CreateBook([FromBody] BookDto dto)
         {
             try
             {
@@ -43,7 +43,7 @@ namespace LibraryManagementProj.API.Controllers
 
         // PUT: api/Book/{id}
         [HttpPut("{id}")]
-        public async Task<IActionResult> UpdateBook(int id, [FromBody] CreateOrUpdateBookDto dto)
+        public async Task<IActionResult> UpdateBook(int id, [FromBody] BookDto dto)
         {
             try
             {

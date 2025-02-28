@@ -9,7 +9,7 @@
     "Parameters": [
       {
         "Name": "dto",
-        "Type": "LibraryManagementProj.API.DTOs.CreateOrUpdateBookDto",
+        "Type": "LibraryManagementProj.API.DTOs.BookDto",
         "IsRequired": true
       }
     ],
@@ -30,7 +30,7 @@
       },
       {
         "Name": "dto",
-        "Type": "LibraryManagementProj.API.DTOs.CreateOrUpdateBookDto",
+        "Type": "LibraryManagementProj.API.DTOs.BookDto",
         "IsRequired": true
       }
     ],
@@ -40,6 +40,91 @@
     "ContainingType": "LibraryManagementProj.API.Controllers.BookController",
     "Method": "DeleteBook",
     "RelativePath": "api/Book/{id}",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "LibraryManagementProj.API.Controllers.BorrowedBookController",
+    "Method": "BorrowBook",
+    "RelativePath": "api/BorrowedBook/borrow",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "request",
+        "Type": "LibraryManagementProj.API.DTOs.BorrowedBookDTO",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "LibraryManagementProj.API.Controllers.BorrowedBookController",
+    "Method": "ReturnBook",
+    "RelativePath": "api/BorrowedBook/return",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "request",
+        "Type": "LibraryManagementProj.API.DTOs.BorrowedBookDTO",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "LibraryManagementProj.API.Controllers.UserController",
+    "Method": "CreateUser",
+    "RelativePath": "api/User",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "dto",
+        "Type": "LibraryManagementProj.API.DTOs.UserDTO",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "LibraryManagementProj.API.Controllers.UserController",
+    "Method": "UpdateUser",
+    "RelativePath": "api/User/{id}",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      },
+      {
+        "Name": "dto",
+        "Type": "LibraryManagementProj.API.DTOs.UserDTO",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "LibraryManagementProj.API.Controllers.UserController",
+    "Method": "DeleteUser",
+    "RelativePath": "api/User/{id}",
     "HttpMethod": "DELETE",
     "IsController": true,
     "Order": 0,

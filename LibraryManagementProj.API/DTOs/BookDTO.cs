@@ -2,7 +2,7 @@
 
 namespace LibraryManagementProj.API.DTOs
 {
-    public class CreateOrUpdateBookDto
+    public class BookDto
     {
         public string BookName { get; set; }
         public string Description { get; set; }

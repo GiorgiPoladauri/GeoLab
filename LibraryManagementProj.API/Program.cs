@@ -24,6 +24,14 @@ namespace LibraryManagementProj.API
             builder.Services.AddScoped<IBookRepository, BookRepository>();
             builder.Services.AddScoped<IBookService, BookService>();
 
+            // Register the missing services
+            builder.Services.AddScoped<IBorrowBookService, BorrowBookService>();
+            builder.Services.AddScoped<IBorrowedBookRepository, BorrowedBookRepository>();
+
+            builder.Services.AddScoped<IUserRepository, UserRepository>();
+            builder.Services.AddScoped<IUserService, UserService>();
+
+
             // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
             builder.Services.AddEndpointsApiExplorer();
             builder.Services.AddSwaggerGen();

@@ -3,6 +3,7 @@ using System.Threading.Tasks;
 using LibraryManagementProj.Core.Models;
 using LibraryManagementProj.Core.Interfaces.IRepositories;
 using LibraryManagementProj.Application.Services.Abstractions;
+using System.Net;
 
 namespace LibraryManagementProj.Application.Services.Implementation
 {
@@ -33,8 +34,8 @@ namespace LibraryManagementProj.Application.Services.Implementation
             await _bookRepository.UpdateBookAsync(book);
 
             // Create a borrowing record for this user
-            var borrowedbook = new BorrowedBook(userid, bookid, DateTime.Now, DateTime.MinValue);
-            await _borrowedBookRepository.BorrowBookAsync(borrowedbook);
+            var borrowedBook = new BorrowedBook(userid, bookid, DateTime.Now, DateTime.Now.AddMonths(1));
+            await _borrowedBookRepository.BorrowBookAsync(borrowedBook);
         }
 
         public async Task ReturnBookAsync(int bookid, int userid)
