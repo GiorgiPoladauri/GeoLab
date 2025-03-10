@@ -10,7 +10,6 @@ namespace LibraryManagementProj.Test.Infrastructure.Repositories
 {
     public class BookRepositoryxUnitTest
     {
-        // Helper method: creates new options for an in-memory database.
         private DbContextOptions<LibraryContext> CreateNewContextOptions()
         {
             return new DbContextOptionsBuilder<LibraryContext>()
@@ -21,7 +20,6 @@ namespace LibraryManagementProj.Test.Infrastructure.Repositories
         [Fact]
         public async Task AddBookAsync_ShouldAddBookToDatabase()
         {
-            // Arrange: create a new in-memory context and repository.
             var options = CreateNewContextOptions();
             using var context = new LibraryContext(options);
             var repository = new BookRepository(context);
@@ -34,11 +32,9 @@ namespace LibraryManagementProj.Test.Infrastructure.Repositories
                 pages: 123,
                 quantity: 10);
 
-            // Act: add the book and then retrieve it by its ID.
             int newBookId = await repository.AddBookAsync(testBook);
             var retrievedBook = await repository.GetBookByIDAsync(newBookId);
 
-            // Assert: verify the book was added correctly.
             Assert.NotNull(retrievedBook);
             Assert.Equal("Test Book", retrievedBook.BookName);
             Assert.Equal("This is a test book.", retrievedBook.Description);
